@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
+    <title>countdown</title>
     <style>
         body {
             display: flex;
@@ -34,7 +34,7 @@
             document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
             if (distance < 0) {
                 clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "The time has come!";
+                document.getElementById("countdown").innerHTML = "its joever";
             }
         }
         const countdownInterval = setInterval(updateCountdown, 1000);
